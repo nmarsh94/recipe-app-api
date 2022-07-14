@@ -1,5 +1,5 @@
-FROM python:3.7-alpine
-MAINTAINER Nico.
+FROM python:3.9-alpine3.13
+LABEL maintainer="nicolasmarsh94@gmail.com"
 
 ENV PYTHONUNBUFFERED 1
 
@@ -22,3 +22,6 @@ RUN adduser -D user
 RUN chown -R user:user /vol/
 RUN chmod -R 755 /vol/web
 USER user
+
+
+CMD ["run.sh"]
