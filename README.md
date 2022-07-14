@@ -48,8 +48,17 @@ La API está documentada con Swagger, y estará disponible en:
 
 #### User endpoints
 Nos permite crear, actualizar usuarios, cambiar la contraseña de los usuarios y crear un token de autenticación de usuario que se puede usar para autenticar la solicitud a las otras APIs del proyecto.
+
 #### Recipe endpoints
 Nos permite la creación de recetas, el filtrado y clasificación de etiquetas, ingredientes y recetas. También subir y ver imágenes.
+
+#### Health-check endpoint
+
+Comprobación del estado de la API. Es un método de supervisión de la API que comprueba la API y avisa cuando nota que algo anda mal.
+
+#### Schema Endpoint 
+Devuelve un esquema JSON basado en la clase de documento solicitada. El esquema JSON describe el formato de datos para la clase de documento solicitada, incluidos los tipos de datos, los valores válidos y las descripciones. Las solicitudes se envían al punto final transaccional (es decir, solicitud única). El documento devuelto siempre se devuelve en formato JSON. 
+
 
 
 
