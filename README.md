@@ -14,13 +14,9 @@ API REST completamente funcional, en la cual se utilizó:
 
 ## Definición
 
-La API desarrollada te permite crear recetas, con título, precio, tiempos, ingredientes y tags. Se puede pensar como un libro de recetas virtual.
-A su vez, ésta puede manejar autenticación de usuarios, creación de objetos, filtrado y clasificación de objetos, subir, ver imágenes y más.
-El proyecto está configurado con Docker y Docker-Compose.
-Se buscó orientar el proceso de desarrollo a las mejores prácticas, programando pruebas unitarias, utilizando Django Test Framework, en un proceso de desarrollo dirigido por tests (TDD). 
-El manejo de carga de archivos multimedia fue realizado con Django, además se utilizó las funcionalidades que proporciona el panel de administración de django.
-También se configuró el proyecto para que utilice una base de datos Postgres.
-Se generaron esquemas OpenAPI 3 y documentación para el proyecto con drf-spectacular y Swagger.
+La API desarrollada te permite crear recetas, con título, precio, tiempos, ingredientes y tags. Se puede pensar como un libro de recetas virtual. A su vez, ésta puede manejar autenticación de usuarios, creación de objetos, filtrado y clasificación de objetos, subir y ver imágenes, y más. El proyecto está configurado con Docker y Docker-Compose. Se buscó orientar el proceso de desarrollo a las mejores prácticas, programando pruebas unitarias, utilizando Django Test Framework, en un proceso de desarrollo dirigido por tests (TDD). 
+
+Toda la lógica de programación está hecha con Python, así también como los tests. Siguiendo las PEP-8 de buenas prácticas. El manejo de carga de archivos multimedia fue realizado con Django, además se utilizó las funcionalidades que proporciona el panel de administración de django.  Se configuró el proyecto para que utilice una base de datos Postgres y se generaron esquemas OpenAPI 3 y documentación para el proyecto con drf-spectacular y Swagger.
 
 
 
@@ -50,6 +46,10 @@ La API está documentada con Swagger, y estará disponible en:
 > http://127.0.0.1:8000/api/docs/
 
 
+#### User endpoints
+Nos permite crear, actualizar usuarios, cambiar la contraseña de los usuarios y crear un token de autenticación de usuario que se puede usar para autenticar la solicitud a las otras APIs del proyecto.
+#### Recipe endpoints
+Nos permite la creación de recetas, el filtrado y clasificación de etiquetas, ingredientes y recetas. También subir y ver imágenes.
 
 
 
